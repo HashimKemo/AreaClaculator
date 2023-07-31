@@ -1,0 +1,12 @@
+.Area{
+  border-bottom: 1px solid gray;
+  margin: 1rem;
+}
+.Acre{
+  border-bottom: 1px solid gray;
+  padding-bottom: 1rem;
+  margin: 0 1rem 1rem 1rem;
+}
+body{
+  background-color: aliceblue;
+}

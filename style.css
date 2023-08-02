@@ -15,26 +15,30 @@ body{
   padding: 0%;
 }   
 .parent{
-  background-color: #5c9ead;
+  background-color: #87c2cf;
   border-radius: 2rem;
   margin-top: 20%;
   margin-left: 16px;
   margin-right: 16px;
 }
-@media (min-width:768px){
+@media (min-width:500px){
   .parent{
-    background-color: #5c9ead;
+    background-color: #87c2cf;
     border-radius: 2rem;
     margin-top: 15%;  
   }
+  .input{
+    width: 50%;
+  }
 }
 .input{
-  width: 50%;
   margin: auto;
-  padding-top: 1rem;
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: center;
   column-gap: 0.5rem;
+  color: #020202;
+  border-bottom: 2px solid rgb(105, 121, 139);
 }
 input,button{
   font-size: 1rem;
@@ -44,24 +48,29 @@ input,button{
   border: 2px solid rgb(255, 255, 255);
 }
 button{
+  font-size: 1.2rem;
   cursor:pointer;
 }
 #width,#height{
-  width: 8.8rem;
+  width: 8rem;
   background-color: rgba(255, 255, 255, 0.7);
 }
-.ul{
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
+
+.calcResult{
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-rows: repeat(3,1fr);
+  height: 10rem;
+  padding: 0.8rem;
+  background: #aae6f3;
+  -webkit-border-radius: 0px 0px 022px 022px;
+  border-radius: 0px 0px 022px 022px;
 }
-li{
+.p{
   display: flex;
   justify-content: flex-end;
-  padding-top: 0.2rem;
-  word-break: break-all;
 }
-.border{
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid rgba(0, 0, 0,0.5);
+.result{
+  font-weight: bold;
+  word-break: break-all;
 }

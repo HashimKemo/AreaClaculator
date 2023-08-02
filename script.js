@@ -7,14 +7,18 @@ const enter = document.querySelectorAll(".in");
 let li = document.getElementsByTagName("li");
 
 function getArea (){
+  li4 =document.createElement("li");
   li0 =document.createElement("li");
   li1 =document.createElement("li");
   li2 =document.createElement("li");
-  li0.appendChild(document.createTextNode('المساحة: '+ width.value*height.value+" م ²- "))
+  li4.appendChild(document.createTextNode(`الطول :${height.value} م _ العرض : ${width.value} م`))
+  li0.appendChild(document.createTextNode(`المساحة: ${width.value*height.value} م²-`))
   let cArea = ((width.value*height.value)/4200).toPrecision(6);
-  li1.appendChild(document.createTextNode(' المساحة بالفدان: '+cArea +" فدان-"))
+  li1.appendChild(document.createTextNode(` المساحة بالفدان: ${cArea} فدان-`))
   let hArea = ((width.value*height.value)/10000);
-  li2.appendChild(document.createTextNode(' المساحة بالهكتار: '+hArea +" هكتار-"))
+  li2.appendChild(document.createTextNode(` المساحة بالهكتار: ${hArea} هكتار-`))
+  li2.classList.add("border")
+  ul.appendChild(li4)
   ul.appendChild(li0)
   ul.appendChild(li1)
   ul.appendChild(li2)

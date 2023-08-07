@@ -13,13 +13,17 @@ body{
   font-variant: normal;
   margin: 0;
   padding: 0%;
+  display: flex;
+  justify-content: center;
 }   
 .parent{
   background-color: #87c2cf;
   border-radius: 2rem;
   margin-top: 20%;
-  margin-left: 16px;
-  margin-right: 16px;
+  /* margin-left: 16px;
+  margin-right: 16px; */
+  text-align: center;
+  width: 90%;
 }
 @media (min-width:500px){
   .parent{
@@ -58,17 +62,13 @@ button{
 
 .calcResult{
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3,1fr);
   height: 10rem;
   padding: 0.8rem;
   background: #aae6f3;
   -webkit-border-radius: 0px 0px 022px 022px;
   border-radius: 0px 0px 022px 022px;
-}
-.p{
-  display: flex;
-  justify-content: flex-end;
 }
 .result{
   font-weight: bold;

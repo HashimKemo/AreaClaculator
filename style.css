@@ -25,21 +25,17 @@ body{
   text-align: center;
   width: 90%;
 }
-@media (min-width:500px){
-  .parent{
-    background-color: #87c2cf;
-    border-radius: 2rem;
-    margin-top: 15%;  
-  }
-  .input{
-    width: 50%;
+@media (min-width:1200px){
+  #width{
+    width: 10%;
   }
 }
 .input{
   margin: auto;
-  padding: 1.5rem 2rem;
+  padding: 0rem 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 0.5rem;
   color: #020202;
   border-bottom: 2px solid rgb(105, 121, 139);
@@ -50,27 +46,30 @@ input,button{
   text-align: right;
   border-radius: 0.3rem;
   border: 2px solid rgb(255, 255, 255);
+  margin: 1rem 0rem;
 }
 button{
   font-size: 1.2rem;
   cursor:pointer;
 }
-#width,#height{
-  width: 8rem;
+#width,#height,.acreIn{
+  width: 50%;
   background-color: rgba(255, 255, 255, 0.7);
 }
 
 .calcResult{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3,1fr);
-  height: 10rem;
   padding: 0.8rem;
   background: #aae6f3;
   -webkit-border-radius: 0px 0px 022px 022px;
   border-radius: 0px 0px 022px 022px;
+  row-gap: 1rem;
+  height: 9rem;
+  text-align: center;
 }
 .result{
   font-weight: bold;
   word-break: break-all;
 }
+

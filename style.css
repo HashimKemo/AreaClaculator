@@ -1,29 +1,35 @@
+:root{
+  --bgColor: #314652;
+  --parentColor: #afafaf;
+  --resultColor: #fff;
+}
 body{
-  background: #407899;
-  background: -moz-linear-gradient(top, #407899 0%, #407899 58%, #829eb4 100%);
-  background: -webkit-linear-gradient(top, #407899 0%, #407899 58%, #829eb4 100%);
-  background: linear-gradient(to bottom, #407899 0%, #407899 58%, #829eb4 100%);
+  background: var(--bgColor);
   font-family: Tahoma, Geneva, sans-serif;
   background-attachment: fixed;
   font-size: 21px;
-  letter-spacing: 1px;
   word-spacing: 2px;
   color: #000000;
   font-style: normal;
   font-variant: normal;
-  margin: 0;
-  padding: 0%;
   display: flex;
   justify-content: center;
-}   
+}
+
+::selection{
+  background: #558cac;
+  color: white;
+}
+
 .parent{
-  background-color: #87c2cf;
+  background: var(--parentColor);
   border-radius: 2rem;
   margin-top: 20%;
-  /* margin-left: 16px;
-  margin-right: 16px; */
   text-align: center;
   width: 90%;
+  max-width: 50rem;
+  -webkit-box-shadow: 5px 5px 22px 0px rgb(0, 0, 0); 
+  box-shadow: 5px 5px 22px 0px rgb(0, 0, 0);
 }
 @media (min-width:1200px){
   #width{
@@ -61,7 +67,7 @@ button{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0.8rem;
-  background: #aae6f3;
+  background: var(--resultColor);
   -webkit-border-radius: 0px 0px 022px 022px;
   border-radius: 0px 0px 022px 022px;
   row-gap: 1rem;

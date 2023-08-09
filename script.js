@@ -98,7 +98,7 @@ function conAcre (){
   acreIn.classList.add("acreIn")
   input.appendChild(acreIn)
   acreIn.setAttribute("type","number")
-  acreIn.setAttribute("placeholder","فدان")
+  acreIn.setAttribute("placeholder","المساحة بالفدان")
   acreIn.addEventListener("keypress",function (event){
     if (acreIn.value > 0 && event.which === 13 && pHectars.value!==""&&pMeters.value!==""&&acreMetersResult.value!==""&&acreHectarsResult.value!==""&& acreIn.value!==""){
       acreCalc()
@@ -107,7 +107,7 @@ function conAcre (){
 }
 
 // Switch Button
-change.textContent="تحويل"
+change.textContent="تغيير الوحدة"
 parentDiv.appendChild(change)
 
 // Resvers Button
@@ -116,7 +116,7 @@ change.addEventListener("click",function (){
   parentDiv.removeChild(change)
   let Return = document.createElement("button");
   parentDiv.appendChild(Return)
-  Return.textContent="ارجاع";
+  Return.textContent="تغيير الوحدة";
 
   Return.onclick = function (){
     parentDiv.appendChild(change)
@@ -139,6 +139,6 @@ change.addEventListener("click",function (){
     width.value=""
     height.value=""
 
-    calcResult.style.cssText="grid-template-rows: repeat(3,1fr)"
+    calcResult.style.cssText="grid-template-rows: repeat(3,2.5rem)"
   }
 })
